@@ -68,8 +68,17 @@ function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     Body.setStatic(packageBody,false);
   }
+	if(packageSprite.y==200){
+	if(keyCode ==LEFT_ARROW){
+		packageBody.position.x = packageBody.position.x -2;
+		helicopterSprite.position.x -=2;
+	}
+	if(keyCode ==RIGHT_ARROW){
+		packageBody.position.x = packageBody.position.x +2;
+		helicopterSprite.position.x +=2;
+	}
 }
-  function controls()
+/*  function controls()
 {
 	if(packageSprite.y==200){
 	if(keyDown(LEFT_ARROW)){
@@ -81,7 +90,8 @@ function keyPressed() {
 		helicopterSprite.position.x +=2;
 	}
 }
-// Mam there is problem in my code that package follow projectile motion if we use arrow keys.
+// Mam there is problem in my code that package follow projectile motion if we use arrow keys.*/
+	
 }
 
 
