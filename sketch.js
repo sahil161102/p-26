@@ -73,7 +73,7 @@ function keyPressed() {
 		packageBody.position.x = packageBody.position.x -2;
 		helicopterSprite.position.x -=2;
 	}
-	if(keyCode ==RIGHT_ARROW){
+	else if(keyCode ==RIGHT_ARROW){
 		packageBody.position.x = packageBody.position.x +2;
 		helicopterSprite.position.x +=2;
 	}
