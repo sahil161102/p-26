@@ -59,7 +59,7 @@ function draw() {
 
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
- controls();
+ //controls();
   drawSprites();
  
 }
